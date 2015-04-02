@@ -124,7 +124,26 @@ public class calculadora extends ActionBarActivity {
         onClickOperationCapture(buttonDivide);
     }
 
+    public void onClickButtonExponent(View buttonExponent){
+        operator = "^";
+        onClickOperationCapture(buttonExponent);
+    }
+
+    public void onClickButtonSquareRoot(View buttonExponent){
+        TextView textView = (TextView)findViewById(R.id.textViewNumberContainer);
+        onClickOperationCapture(buttonExponent);
+        result = Math.pow(number1,0.5);
+        textView.setText(result.toString());
+    }
+
+    public void onClickButtonModule(View buttonModule){
+        operator = "%";
+        onClickOperationCapture(buttonModule);
+    }
+
     /*Operator Methods*/
+
+    /*Action methods*/
 
     public void onClickButtonCE(View buttonCE){
         number1 = 0.0;
@@ -153,8 +172,18 @@ public class calculadora extends ActionBarActivity {
             result = number1/number2;
         }
 
+        if (operator.equals("^")){
+            result = Math.pow(number1, number2);
+        }
+
+        if (operator.equals("%")){
+            result = number1%number2;
+        }
+
         textView.setText(result.toString());
     }
+
+    /*Action methods*/
 
     public void onClickOperationCapture(View operationCapture){
         TextView textView = (TextView)findViewById(R.id.textViewNumberContainer);

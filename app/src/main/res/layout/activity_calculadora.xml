@@ -224,4 +224,43 @@
         android:layout_alignLeft="@+id/button9"
         android:layout_alignStart="@+id/button9"
         android:layout_alignTop="@+id/buttonEquals" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="^"
+        android:id="@+id/buttonExponent"
+        android:background="#00897B"
+        android:textColor="#FFF"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onClickButtonExponent"
+        android:layout_alignTop="@+id/buttonPlus"
+        android:layout_toRightOf="@+id/button7"
+        android:layout_toEndOf="@+id/button7" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSquareRoot"
+        android:background="#00897B"
+        android:textColor="#FFF"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onClickButtonSquareRoot"
+        android:layout_alignBottom="@+id/buttonMinus"
+        android:layout_alignLeft="@+id/buttonExponent"
+        android:layout_alignStart="@+id/buttonExponent"
+        android:text="√" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonModule"
+        android:background="#00897B"
+        android:textColor="#FFF"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onClickButtonModule"
+        android:text="%"
+        android:layout_alignBottom="@+id/buttonTimes"
+        android:layout_alignLeft="@+id/buttonEquals"
+        android:layout_alignStart="@+id/buttonEquals" />
 </RelativeLayout>
