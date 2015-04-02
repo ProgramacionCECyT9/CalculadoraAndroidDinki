@@ -141,6 +141,27 @@ public class calculadora extends ActionBarActivity {
         onClickOperationCapture(buttonModule);
     }
 
+    public void onClickButtonSin(View buttonSin){
+        TextView textView = (TextView)findViewById(R.id.textViewNumberContainer);
+        onClickOperationCapture(buttonSin);
+        result = Math.sin(number1);
+        textView.setText(result.toString());
+    }
+
+    public void onClickButtonCos(View buttonCos){
+        TextView textView = (TextView)findViewById(R.id.textViewNumberContainer);
+        onClickOperationCapture(buttonCos);
+        result = Math.cos(number1);
+        textView.setText(result.toString());
+    }
+
+    public void onClickButtonTan(View buttonTan){
+        TextView textView = (TextView)findViewById(R.id.textViewNumberContainer);
+        onClickOperationCapture(buttonTan);
+        result = Math.tan(number1);
+        textView.setText(result.toString());
+    }
+
     /*Operator Methods*/
 
     /*Action methods*/

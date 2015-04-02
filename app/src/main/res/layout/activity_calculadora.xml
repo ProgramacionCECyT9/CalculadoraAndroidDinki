@@ -32,7 +32,8 @@
         android:layout_marginTop="27dp"
         android:textColor="#FFF"
         android:background="#4CAF50"
-        android:onClick="onClickButtonOne" />
+        android:onClick="onClickButtonOne"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -43,7 +44,8 @@
         android:layout_centerHorizontal="true"
         android:textColor="#FFF"
         android:background="#4CAF50"
-        android:onClick="onClickButtonTwo" />
+        android:onClick="onClickButtonTwo"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -55,7 +57,8 @@
         android:layout_alignEnd="@+id/textViewNumberContainer"
         android:textColor="#FFF"
         android:background="#4CAF50"
-        android:onClick="onClickButtonThree" />
+        android:onClick="onClickButtonThree"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -68,7 +71,8 @@
         android:textColor="#FFF"
         android:background="#4CAF50"
         android:layout_marginTop="10dp"
-        android:onClick="onClickButtonFour" />
+        android:onClick="onClickButtonFour"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -81,7 +85,8 @@
         android:textColor="#FFF"
         android:background="#4CAF50"
         android:layout_marginTop="10dp"
-        android:onClick="onClickButtonFive" />
+        android:onClick="onClickButtonFive"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -93,7 +98,8 @@
         android:layout_above="@+id/button7"
         android:layout_alignLeft="@+id/button9"
         android:layout_alignStart="@+id/button9"
-        android:onClick="onClickButtonSix" />
+        android:onClick="onClickButtonSix"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -106,7 +112,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="10dp"
-        android:onClick="onClickButtonSeven" />
+        android:onClick="onClickButtonSeven"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -118,7 +125,8 @@
         android:layout_alignTop="@+id/button7"
         android:layout_alignLeft="@+id/button5"
         android:layout_alignStart="@+id/button5"
-        android:onClick="onClickButtonEight" />
+        android:onClick="onClickButtonEight"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -130,7 +138,8 @@
         android:layout_alignTop="@+id/button8"
         android:layout_alignRight="@+id/button0"
         android:layout_alignEnd="@+id/button0"
-        android:onClick="onClickButtonNine" />
+        android:onClick="onClickButtonNine"
+        android:clickable="true" />
 
     <Button
         android:layout_width="match_parent"
@@ -143,7 +152,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="10dp"
-        android:onClick="onClickButtonZero" />
+        android:onClick="onClickButtonZero"
+        android:clickable="true" />
 
     <Button
         android:layout_width="60dp"
@@ -155,7 +165,10 @@
         android:background="#00897B"
         android:textColor="#FFF"
         android:layout_marginTop="10dp"
-        android:onClick="onClickButtonTimes" />
+        android:onClick="onClickButtonTimes"
+        android:clickable="true"
+        android:layout_alignRight="@+id/buttonMinus"
+        android:layout_alignEnd="@+id/buttonMinus" />
 
     <Button
         android:layout_width="60dp"
@@ -169,7 +182,10 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="10dp"
         android:nestedScrollingEnabled="false"
-        android:onClick="onClickButtonPlus" />
+        android:onClick="onClickButtonPlus"
+        android:clickable="true"
+        android:layout_alignRight="@+id/button7"
+        android:layout_alignEnd="@+id/button7" />
 
     <Button
         android:layout_width="60dp"
@@ -181,7 +197,10 @@
         android:background="#00897B"
         android:textColor="#FFF"
         android:layout_marginTop="10dp"
-        android:onClick="onClickButtonMinus" />
+        android:onClick="onClickButtonMinus"
+        android:clickable="true"
+        android:layout_alignRight="@+id/buttonPlus"
+        android:layout_alignEnd="@+id/buttonPlus" />
 
     <Button
         android:layout_width="60dp"
@@ -194,28 +213,33 @@
         android:layout_below="@+id/buttonTimes"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="10sp" />
+        android:layout_marginTop="10sp"
+        android:clickable="true"
+        android:layout_alignRight="@+id/buttonTimes"
+        android:layout_alignEnd="@+id/buttonTimes" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="="
         android:id="@+id/buttonEquals"
-        android:layout_alignBottom="@+id/buttonDivide"
-        android:layout_toRightOf="@+id/button7"
-        android:background="#00897B"
+        android:background="#AA00FF"
         android:textColor="#FFF"
         android:onClick="onClickButtonEquals"
+        android:clickable="true"
         android:layout_alignTop="@+id/buttonDivide"
-        android:layout_alignRight="@+id/button8"
-        android:layout_alignEnd="@+id/button8" />
+        android:layout_alignLeft="@+id/buttonModule"
+        android:layout_alignStart="@+id/buttonModule"
+        android:layout_toStartOf="@+id/button"
+        android:layout_alignRight="@+id/buttonModule"
+        android:layout_alignEnd="@+id/buttonModule" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CE"
         android:id="@+id/button"
-        android:background="#00897B"
+        android:background="#AA00FF"
         android:textColor="#FFF"
         android:onClick="onClickButtonCE"
         android:layout_alignBottom="@+id/buttonEquals"
@@ -223,44 +247,103 @@
         android:layout_alignEnd="@+id/button0"
         android:layout_alignLeft="@+id/button9"
         android:layout_alignStart="@+id/button9"
-        android:layout_alignTop="@+id/buttonEquals" />
+        android:layout_alignTop="@+id/buttonEquals"
+        android:clickable="true" />
 
     <Button
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:text="^"
         android:id="@+id/buttonExponent"
-        android:background="#00897B"
+        android:background="#8D6E63"
         android:textColor="#FFF"
         android:nestedScrollingEnabled="false"
         android:onClick="onClickButtonExponent"
-        android:layout_alignTop="@+id/buttonPlus"
-        android:layout_toRightOf="@+id/button7"
-        android:layout_toEndOf="@+id/button7" />
+        android:clickable="true"
+        android:layout_above="@+id/buttonMinus"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8"
+        android:layout_alignRight="@+id/button8"
+        android:layout_alignEnd="@+id/button8" />
 
     <Button
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:id="@+id/buttonSquareRoot"
-        android:background="#00897B"
+        android:background="#8D6E63"
         android:textColor="#FFF"
         android:nestedScrollingEnabled="false"
         android:onClick="onClickButtonSquareRoot"
         android:layout_alignBottom="@+id/buttonMinus"
         android:layout_alignLeft="@+id/buttonExponent"
         android:layout_alignStart="@+id/buttonExponent"
-        android:text="√" />
+        android:text="√"
+        android:clickable="true"
+        android:layout_alignRight="@+id/buttonExponent"
+        android:layout_alignEnd="@+id/buttonExponent" />
 
     <Button
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:id="@+id/buttonModule"
-        android:background="#00897B"
+        android:background="#8D6E63"
         android:textColor="#FFF"
         android:nestedScrollingEnabled="false"
         android:onClick="onClickButtonModule"
         android:text="%"
-        android:layout_alignBottom="@+id/buttonTimes"
-        android:layout_alignLeft="@+id/buttonEquals"
-        android:layout_alignStart="@+id/buttonEquals" />
+        android:clickable="true"
+        android:layout_alignTop="@+id/buttonTimes"
+        android:layout_alignLeft="@+id/buttonSquareRoot"
+        android:layout_alignStart="@+id/buttonSquareRoot"
+        android:layout_alignRight="@+id/buttonSquareRoot"
+        android:layout_alignEnd="@+id/buttonSquareRoot" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="sin"
+        android:id="@+id/buttonSin"
+        android:background="#2196F3"
+        android:textColor="#FFF"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onClickButtonSin"
+        android:clickable="true"
+        android:layout_alignTop="@+id/buttonExponent"
+        android:layout_alignLeft="@+id/button9"
+        android:layout_alignStart="@+id/button9"
+        android:layout_alignRight="@+id/button0"
+        android:layout_alignEnd="@+id/button0" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="cos"
+        android:id="@+id/buttonCos"
+        android:background="#2196F3"
+        android:textColor="#FFF"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onClickButtonCos"
+        android:clickable="true"
+        android:layout_above="@+id/buttonTimes"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/buttonSin"
+        android:layout_alignStart="@+id/buttonSin" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="tan"
+        android:id="@+id/buttonTan"
+        android:background="#2196F3"
+        android:textColor="#FFF"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onClickButtonTan"
+        android:clickable="true"
+        android:layout_alignBottom="@+id/buttonModule"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
 </RelativeLayout>
