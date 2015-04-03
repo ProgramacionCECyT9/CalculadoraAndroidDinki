@@ -1,5 +1,16 @@
+/*
+
+Author: Mauricio Ivan Mejia Ramirez
+Description: Final calculator that performs basic operations , obtained sine, cosine , tangent and module
+Compilation: In execution time
+Execution: Open the project in android studio and run in the IDE
+Version: 1.0
+
+*/
+
 package com.ipn.mauriciodinki.calculadora;
 
+/*Libraries*/
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -49,6 +60,7 @@ public class calculadora extends ActionBarActivity {
     /*Variables for operations*/
 
     /*Number Methods*/
+
 
     public void onClickButtonOne(View button1){
         TextView textview = (TextView)findViewById(R.id.textViewNumberContainer);
